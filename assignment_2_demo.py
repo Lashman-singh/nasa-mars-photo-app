@@ -96,7 +96,7 @@ def paginate_photos(photos, rover, date, sol, page=1):
 
 def choose_rover():
     """Displays a menu to select a rover and view its photos."""
-    rovers = ["Curiosity", "Opportunity", "Spirit"]
+    rovers = ["Curiosity", "Perseverance"] 
     rover_options = [(rover, lambda rover=rover: show_photos_for_rover(rover)) for rover in rovers]
     rover_options.append(("Exit", Menu.CLOSE))
 
@@ -108,10 +108,11 @@ if __name__ == "__main__":
 
 # TEST CASES
 """
-1. Curiosity: "2022-08-25"
-2. Opportunity: "2015-07-25", "1000", "https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=1000&api_key=6kVdihE5jRgDkJgsw3aQrIkreW3HF4Zt7SN3UjUO"
-3. Sprit: "2007-01-10", "1000", https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?earth_date=2007-01-10&api_key=6kVdihE5jRgDkJgsw3aQrIkreW3HF4Zt7SN3UjUO
+1. Curiosity: "2022-08-25" "https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=6kVdihE5jRgDkJgsw3aQrIkreW3HF4Zt7SN3UjUO"
+2. Perseverance: "2021-04-20", "100", "https://api.nasa.gov/mars-photos/api/v1/rovers/perseverance/photos?sol=100&api_key=6kVdihE5jRgDkJgsw3aQrIkreW3HF4Zt7SN3UjUO"
 """
+
+
 
 # #6kVdihE5jRgDkJgsw3aQrIkreW3HF4Zt7SN3UjUO
 
